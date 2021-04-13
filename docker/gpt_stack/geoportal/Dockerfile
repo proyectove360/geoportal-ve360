@@ -15,7 +15,7 @@ MAINTAINER David Valentine dwvalentine@usdc.edu
 # && rm -r /var/lib/apt/lists/*
 
 # Install geoportal web application
-ARG GPTGITURL=https://github.com/esri/geoportal-server-catalog.git
+ARG GPTGITURL=https://github.com/proyectove360/geoportal-ve360.git
 # Install harvester application
 ARG HRVGITURL=https://github.com/esri/geoportal-server-harvester.git
 
