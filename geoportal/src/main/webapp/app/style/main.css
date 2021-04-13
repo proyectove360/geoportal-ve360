@@ -185,12 +185,12 @@ body {
 
 .g-header .navbar-nav .nav-item .nav-link:hover,
 .g-header .navbar-nav .nav-item .nav-link:focus {
-  border-bottom: 4px solid #2890ce;
-  color: #007ac2;
+  border-bottom: 4px solid #096b75;
+  color: #07565e;
 }
 
 .g-header .navbar-nav .nav-item.active .nav-link {
-  border-bottom: 4px solid #2890ce;
+  border-bottom: 4px solid #096b75;
   background: transparent;
   color: #000;
 }
@@ -208,13 +208,13 @@ body {
 .g-header .navbar-nav .nav-item .g-nav-dropdown-link:focus {
   border: 0;
   background: transparent;
-  color: #007ac2;
+  color: #07565e;
 }
 
 .g-nav-dropdown-icon {
   width: 24px;
   height: 24px;
-  fill: #2890ce;
+  fill: #096b75;
 }
 
 /* USER ACCOUNT */
@@ -527,6 +527,10 @@ body {
   font-weight: 200;
 }
 
+.g-spatial-filter-relation input {
+  color: #08545c;
+}
+
 .g-spatial-filter-locator {
   position: absolute;
   z-index: 31;
@@ -699,7 +703,7 @@ body {
 .g-paging .pagination li a.g-paging-page-num {
   padding: 4px 10px;
   margin: 0 20px;
-  background: #2890ce;
+  background: #096b75;
   color: #fff;
 }
 
