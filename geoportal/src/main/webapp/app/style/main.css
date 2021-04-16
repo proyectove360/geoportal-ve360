@@ -120,6 +120,7 @@ body {
   border-radius: 5px;
 }
 .g-app-loading .progress-bar {
+  align-items: center;
   border-radius: 4px;
 }
 

@@ -12,8 +12,8 @@ services:
       - es_node=elasticsearch
       - gpt_authentication=authentication-simple.xml
     volumes:
-      - gptharvester:/root
-      - gptmetadata:/opt/tomcat/webapps/metadata
+      - ./harvester:/root
+      - ./metadata:/opt/tomcat/webapps/metadata
     networks:
       - sp-net
       - traefik-public
@@ -42,8 +42,8 @@ services:
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.5.0
-    container_name: elasticsearch1
     hostname: elasticsearch
+    user: $USER
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -52,7 +52,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - esdata1:/usr/share/elasticsearch/data
+      - ./elasticsearch:/usr/share/elasticsearch/data
     environment:
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - bootstrap.memory_lock=true
@@ -111,11 +111,3 @@ networks:
     external: true
   traefik-public:
     external: true
-
-volumes:
-  esdata1:
-    driver: local
-  gptharvester:
-    driver: local
-  gptmetadata:
-    driver: local

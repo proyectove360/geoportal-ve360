@@ -24,9 +24,10 @@ define(["dojo/_base/declare",
         "app/main/SearchPanel",
         "app/main/MapPanel",
         "app/main/AboutPanel",
+        "app/main/homePanel",
         "app/content/MetadataEditor",
         "app/content/UploadMetadata"],
-function(declare, lang, array, topic, appTopics, Templated, template, i18n, util, SearchPanel, MapPanel, AboutPanel,
+function(declare, lang, array, topic, appTopics, Templated, template, i18n, util, SearchPanel, MapPanel, AboutPanel, homePanel,
     MetadataEditor, UploadMetadata) {
 
   var oThisClass = declare([Templated], {
@@ -51,6 +52,9 @@ function(declare, lang, array, topic, appTopics, Templated, template, i18n, util
       }));
       $("a[href='#aboutPanel']").on("shown.bs.tab",lang.hitch(this, function(e) {
         this.setHash('aboutPanel')
+      }));
+      $("a[href='#homePanel']").on("shown.bs.tab",lang.hitch(this, function(e) {
+        this.setHash('homePanel')
       }));
       topic.subscribe(appTopics.AddToMapClicked,lang.hitch(this, function(params){
         if (self.mapPanel.mapWasInitialized) {
