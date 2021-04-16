@@ -371,6 +371,15 @@ define({
       "copyright": "© Geoportal",
       "quickLink1": "Quick Link 1",
       "quickLink2": "Quick Link 2"
+    },
+    
+    about: {
+      
+      whoweare: "Who are we?",
+      summary: "VE360 is an organization that looks to give visibility to the several problems and challenges that Venezuela faces using Data Science tools, as well as Geographic Information Systems to create evidence-based analysis. To achieve this goal, we focus on continuous spatialized data collection inside the country. Among the greatest achievements for this organization is the ample repository of geographical layers covering a wide arrange of topics. ",
+      whatwedo: "What do we do?",
+      what: "We are developing Venezuela's first geospatial infrastructure where we integrate processes technologies and cutting-edge know-how for geographical information to contribute to the diffusion of data analysis and visualizations which will encourage the study of the social, environmental, political and economic reality."
+      
     }
   },
   "es": 1
