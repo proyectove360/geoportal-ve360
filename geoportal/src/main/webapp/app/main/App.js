@@ -180,8 +180,8 @@ function(declare, lang, array, topic, appTopics, Templated, template, i18n, util
     },
     
     _onHome: function() {
-      this.searchPanelLink.click()
-      location.hash = "searchPanel"
+      this.homePanelLink.click()
+      location.hash = "homePanel"
     }
 
   });
