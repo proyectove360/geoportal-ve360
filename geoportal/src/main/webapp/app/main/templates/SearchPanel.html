@@ -10,7 +10,6 @@
     <div class="g-search-content-row">
       <div class="g-search-pane-left">
         <div data-dojo-type="app/search/PageUrlFilter"></div>
-        <!--
 
         <div class="g-filter-collapse g-filter-spatial" data-dojo-type="app/search/SpatialFilter"
           data-dojo-props="
@@ -20,10 +19,6 @@
             open: true,
             label:'${i18n.search.criteria.map}'">
         </div>
-        
-        -->
-        
-        <!--
 
         <div class="g-filter-collapse" data-dojo-type="app/search/TemporalFilter"
           data-dojo-props="
@@ -34,9 +29,6 @@
             open:false,
             label:'${i18n.search.criteria.timePeriod}'">
         </div>
-        -->
-        
-        <!--
 
         <div class="g-filter-collapse" data-dojo-type="app/search/TemporalFilter"
           data-dojo-props="
@@ -45,7 +37,6 @@
             open:false,
             label:'${i18n.search.criteria.date}'">
         </div>
-        -->
         <!-- Uncomment to turn Paleo-Date search
         <div class="g-filter-collapse" data-dojo-type="app/search/BasicNumericFilter"
           data-dojo-props="
@@ -80,16 +71,13 @@
           data-dojo-props="field:'sys_created_dt',interval:'day',allowHistogram:false,label:'Created'">
         </div>
         -->
-                <!--
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'sys_owner_s',open:false,label:'${i18n.search.criteria.owner}'">
         </div>
--->
+
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'apiso_TopicCategory_s',open:false,label:'${i18n.search.criteria.topicCategory}'">
         </div>
-        
-        <!--
 
         <div class="g-filter-collapse" data-dojo-type="app/search/HierarchyTree"
           data-dojo-props="
@@ -97,8 +85,6 @@
             label:'${i18n.search.criteria.hierarchicalCategory}',
             props:{size:200}">
         </div>
-        
-        -->
 
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'sys_metadatatype_s',label:'${i18n.search.criteria.metadataType}'">
@@ -112,18 +98,15 @@
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'keywords_s',label:'${i18n.search.criteria.keywords}',props:{size:20}">
         </div>
-        <!--
 
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'src_source_type_s',label:'${i18n.search.criteria.originType}',props:{size:20, missing:'${i18n.search.criteria.missingSource}'}">
         </div>
--->
 
-<!--
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="field:'src_source_name_s',label:'${i18n.search.criteria.origin}',props:{size:20, missing:'${i18n.search.criteria.missingSource}'}">
         </div>
--->
+
         <div class="g-filter-collapse" data-dojo-type="app/search/TermsAggregation"
           data-dojo-props="
             conditionallyDisabled: !AppContext.geoportal.supportsApprovalStatus,
