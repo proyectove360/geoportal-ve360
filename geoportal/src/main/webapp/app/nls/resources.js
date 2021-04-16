@@ -380,6 +380,16 @@ define({
       whatwedo: "What do we do?",
       what: "We are developing Venezuela's first geospatial infrastructure where we integrate processes technologies and cutting-edge know-how for geographical information to contribute to the diffusion of data analysis and visualizations which will encourage the study of the social, environmental, political and economic reality."
       
+    },
+    
+    home: {
+      
+      mines: "Mining control by irregular groups",
+      malaria: "Malaria cases in Bolivar",
+      canaima3d: "Canaima visualization in 3D",
+      malariasummary: "Visualization of malaria cases in Bolivar State at the city level during 2018.",
+      minessummary: "Visualization of irregular groups that control mines, access points to those mines and nearby State security forces."
+      
     }
   },
   "es": 1

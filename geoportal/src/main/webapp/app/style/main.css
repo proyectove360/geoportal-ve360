@@ -1184,3 +1184,11 @@ a.dropdown-toggle:focus {
   height: 16px;
   width: 16px;
 }
+
+.main-logo {
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  
+}
