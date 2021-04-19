@@ -388,8 +388,14 @@ define({
       malaria: "Malaria cases in Bolivar",
       canaima3d: "Canaima visualization in 3D",
       malariasummary: "Visualization of malaria cases in Bolivar State at the city level during 2018.",
-      minessummary: "Visualization of irregular groups that control mines, access points to those mines and nearby State security forces."
+      minessummary: "Visualization of irregular groups that control mines, access points to those mines and nearby State security forces.",
+      canaimasummary: "Visualization in 3D of mining activity in the surroundings of Canaima National Park."
+    },
+    
+    explore: {
       
+      explore: "Explore",
+      explore2: "Explore our data"
     }
   },
   "es": 1
