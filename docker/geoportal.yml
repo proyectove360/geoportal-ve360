@@ -13,7 +13,6 @@ services:
       - gpt_authentication=authentication-simple.xml
     volumes:
       - ./harvester:/root
-      - ./logs:/usr/local/tomcat/logs
     networks:
       - sp-net
       - traefik-public
