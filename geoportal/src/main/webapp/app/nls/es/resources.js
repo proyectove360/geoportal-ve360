@@ -385,9 +385,9 @@ define({
       mines: "Control de minas por grupos irregulares",
       malaria: "Casos de malaria en Bolívar",
       canaima3d: "Visualización 3D de Canaima",
-      malariasummary: "Visualización de casos de malaria en el estado Bolívar a nivel de localidad para 2018.",
-      minessummary: "Visualización de grupos irregulares que controlan minas, puntos de acceso y los cuerpos de seguridad que operan en las cercanías.",
-      canaimasummary: "Visualización en 3D de la actividad minera dentro y en los alrededores del Parque Nacional Canaima."
+      malariasummary: "Visualización de casos de malaria en el estado Bolívar a nivel de localidad para 2018",
+      minessummary: "Visualización de grupos irregulares que controlan minas, puntos de acceso y los cuerpos de seguridad que operan en las cercanías",
+      canaimasummary: "Visualización en 3D de la actividad minera dentro y en los alrededores del Parque Nacional Canaima"
     },
     
     explore: {
