@@ -264,7 +264,7 @@ define({
     item: {
       notAvailable: "N/A",
       actions: {
-        html: "HTML",
+        html: "Metadata",
         xml: "XML",
         json: "JSON",
         links: "Links",
