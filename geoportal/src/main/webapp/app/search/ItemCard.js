@@ -281,6 +281,20 @@ function(declare, lang, array, string, topic, xhr, on, appTopics, domStyle, domC
           "aria-label": string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.html, title: item.title}),
           innerHTML: i18n.item.actions.html
         },actionsNode);
+        var xmlNode = domConstruct.create("a",{
+          href: uri+"/xml",
+          target: "_blank",
+          title: string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.xml, title: item.title}),
+          "aria-label": string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.xml, title: item.title}),
+          innerHTML: i18n.item.actions.xml
+        },actionsNode);
+        var jsonNode = domConstruct.create("a",{
+          href: uri+"?pretty=true",
+          target: "_blank",
+          title: string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.json, title: item.title}),
+          "aria-label": string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.json, title: item.title}),
+          innerHTML: i18n.item.actions.json
+        },actionsNode);
         if (AppContext.geoportal.supportsApprovalStatus ||
             AppContext.geoportal.supportsGroupBasedAccess) {
           var client = new AppClient();
@@ -298,6 +312,41 @@ function(declare, lang, array, string, topic, xhr, on, appTopics, domStyle, domC
       }
     },
 
+    _renderLinksDropdown: function(item,links) {
+      if (links.length === 0) return;
+      var dd = domConstruct.create("div",{
+        "class": "dropdown",
+        "style": "display:inline-block;"
+      },this.actionsNode);
+      var ddbtn = domConstruct.create("a",{
+        "class": "dropdown-toggle",
+        "href": "#",
+        "data-toggle": "dropdown",
+        "aria-haspopup": true,
+        "aria-expanded": true,
+        title: string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.links, title: item.title}),
+        "aria-label": string.substitute(i18n.item.actions.titleFormat, {action: i18n.item.actions.links, title: item.title}),
+        innerHTML: i18n.item.actions.links
+      },dd);
+      domConstruct.create("span",{
+        "class": "caret"
+      },ddbtn);
+      var ddul = domConstruct.create("ul",{
+        "class": "dropdown-menu",
+      },dd);
+      array.forEach(links, function(u){
+        var ddli = domConstruct.create("li",{},ddul);
+        domConstruct.create("a",{
+          "class": "small",
+          href: u,
+          target: "_blank",
+          title: string.substitute(i18n.item.actions.titleFormat, {action: u, title: item.title}),
+          "aria-label": string.substitute(i18n.item.actions.titleFormat, {action: u, title: item.title}),
+          innerHTML: u
+        },ddli);
+      });
+      this._mitigateDropdownClip(dd,ddul);
+    },
 
     _renderOptionsDropdown: function(itemId,item) {
       var self = this;
@@ -762,7 +811,7 @@ function(declare, lang, array, string, topic, xhr, on, appTopics, domStyle, domC
         var titleNode = this.titleNode;
         var uri = "./rest/metadata/item/"+encodeURIComponent(itemId);
         var htmlNode = domConstruct.create("a",{
-          href: "#",
+          href: uri+"/html",
           target: "_blank",
           title: item.title,
           "aria-label": item.title,
