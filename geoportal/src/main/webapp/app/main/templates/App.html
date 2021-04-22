@@ -82,6 +82,12 @@
           </li>
         --></ul>
       </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#FaqPanel" data-toggle="tab">
+          ${i18n.nav.faq}
+        </a>
+      </li>
 
       <li class="nav-item">
         <a class="nav-link" href="#aboutPanel" data-toggle="tab">
@@ -169,6 +175,12 @@
       <div
         data-dojo-type="app/main/MapPanel"
         data-dojo-attach-point="mapPanel"
+      ></div>
+    </div>
+    <div id="FaqPanel" role="tabpanel" class="tab-pane fade">
+      <div
+        data-dojo-type="app/main/FaqPanel"
+        data-dojo-attach-point="FaqPanel"
       ></div>
     </div>
     <div id="aboutPanel" role="tabpanel" class="tab-pane fade">
