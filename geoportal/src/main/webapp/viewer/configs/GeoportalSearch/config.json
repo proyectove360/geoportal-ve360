@@ -3,7 +3,7 @@
   "targets": [
     {
       "name": "Local Catalog",
-      "url": null,
+      "url": "http://ve360.ml/geoportal/opensearch?f=csw",
       "type": "geoportal",
       "profile": null,
       "requiredFilter": null,
