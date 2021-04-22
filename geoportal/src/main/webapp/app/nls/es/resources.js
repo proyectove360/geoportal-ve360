@@ -36,6 +36,7 @@ define({
       search: "Búsqueda",
       catalog: "Catálogo",
       map: "Mapa",
+      faq: "Preguntas frecuentes",
       about: "Acerca de nosotros",
       admin: "Administrador",
       content: "Contenido",
@@ -394,5 +395,19 @@ define({
       
       explore: "Explora",
       explore2: "Explora nuestros datos"
+    },
+
+    faqs: {
+      
+      faq: "Preguntas frecuentes",
+      ig: "¿Qué es una infraestructura geoespacial?",
+      iganswer: "Las Infraestructuras Geoespaciales (IG) son plataformas que promueven la interoperabilidad y la conexión entre procesos, datos, tecnologías, personas y organizaciones; donde se emplea la información geográfica en su totalidad, desarrollando datos, servicios y flujos de trabajo. ",
+      geoportal: "¿Qué es un geoportal?",
+      geoportalanswer: "El geoportal es la interfaz por la que navegará el usuario y donde se compila la información espacial, la cual puede estar en forma de datos, mapas, análisis y visualizaciones. ",
+      howtouse: "¿Cómo se usa el geoportal?",
+      howtouseanswer: "Actualmente las opciones que se podrán encontrar en el geoportal son: En el Catálogo está el listado general de metadata. A través de él se podrán conseguir todas las capas de las que dispone la plataforma y consultar la información detallada sobre cada una. Asimismo, se pueden hacer previsualizaciones en el botón “Previsualizar” y agregar directamente al mapa desde la opción “Agregar al mapa”. En el Mapa se podrán visualizar todas aquellas capas que se hayan agregado desde el catálogo. De esta forma, el mapa contiene un botón que despliega la lista de las seleccionadas y otro que muestra la leyenda. Desde la lista de capas también se puede acceder a la opción “ver en la tabla de atributos”, la cual se abrirá en la parte inferior de la pantalla y donde se podrán observar las variables y los objetos de cada capa.",
+      expect: "¿Qué esperar del geoportal?",
+      expectanswer: "VE360 pone a disposición de la ciudadanía un geoportal con el objeto de ofrecer información geoespacial que nutra la comprensión del territorio venezolano y los fenómenos que en él ocurren. Además de las capas, se podrán consultar análisis y visualizaciones sobre distintos tópicos. VE360 a través del geoportal busca propiciar el intercambio de información con distintas instituciones y organizaciones interesadas en acercarse más al territorio y geolocalizar sus trabajos, producir mapas, hacer uso de la cartografía, o simplemente exponer sus datos, convirtiendo a la plataforma en un notable centro de almacenamiento de información espacial."
+      
     }
 });
