@@ -240,12 +240,12 @@
     "itemId": "6e03e8c26aad4b9c92a87c1063ddb0e3",
     "mapOptions": {
       "extent": {
-        "xmin": -18000000,
-        "ymin": -12000000,
-        "xmax": 18000000,
-        "ymax": 16000000,
+        "xmin": -73.38,
+        "ymin": 0.64,
+        "xmax": -58.95,
+        "ymax": 16.75,
         "spatialReference": {
-          "wkid": 102100
+          "wkid": 4326
         }
       }
     },
