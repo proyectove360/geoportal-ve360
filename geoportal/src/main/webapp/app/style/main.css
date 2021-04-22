@@ -1399,8 +1399,6 @@ a.dropdown-toggle:focus {
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .center-video {
     display: flex; 
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
