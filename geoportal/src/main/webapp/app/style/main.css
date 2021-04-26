@@ -1404,9 +1404,9 @@ a.dropdown-toggle:focus {
 }
 .left-video {
     float: left;
-    width: 50%;
+    width: 45%;
 }
 .right-video {
     float: right;
-    width: 50%;
+    width: 45%;
 }
